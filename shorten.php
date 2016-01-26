@@ -4,7 +4,7 @@
 
 class ShortenVars {
 
-	private function shorten_vars($data) {
+	public function shorten_vars($data) {
 		if(is_array($data)) {
 			$data = array_map(array($this, 'shorten_vars'), $data);
 		} else if(is_object($data)) {
