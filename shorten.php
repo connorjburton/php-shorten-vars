@@ -8,7 +8,7 @@ class ShortenVars {
 		if(is_array($data)) {
 			$data = array_map(array($this, 'shorten_vars'), $data);
 		} else if(is_object($data)) {
-	    	$check = array();
+	    		$check = array();
 	  		$obj_to_arr = json_decode(json_encode($data), true);
 	  
 	  		$data = array_map(function($k, $v) use (&$check) {
