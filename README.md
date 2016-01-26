@@ -1,0 +1,2 @@
+# php-shorten-vars
+WIP
